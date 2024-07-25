@@ -1,0 +1,11 @@
+server:
+  port: ${REST_SERVICE_PORT}
+spring:
+  datasource:
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    generate-ddl: true
+
+salt: ${SALT}
