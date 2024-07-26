@@ -28,5 +28,5 @@ service:
     uri: ${TG_BOT_FILE_STORAGE_URI}
 
 link:
-  address: ${TG_BOT_URI:https://833b-198-244-213-131.ngrok-free.app}
-salt: ${SALT:Pq12GSnZ5CwkrmutojxQbMl3cRi8speFya760ONUYKgThHAWJIfLdD9V4XEvzB}
+  address: ${TG_BOT_URI}
+salt: ${SALT}
