@@ -4,9 +4,9 @@ server:
     enabled: false
 
 bot:
-  name: {TG_BOT_NAME}
-  token: {TG_BOT_TOKEN}
-  uri: {TG_BOT_URI}
+  name: ${TG_BOT_NAME}
+  token: ${TG_BOT_TOKEN}
+  uri: ${TG_BOT_URI}
 
 spring:
   rabbitmq:
