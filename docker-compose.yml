@@ -13,7 +13,7 @@ services:
     container_name: dispatcher
     restart: on-failure
     build:
-      context: BotJava
+      context: .
       dockerfile: dispatcher/Dockerfile
 #    TODO нужно откомментировать для локального запуска без traefik
 #    ports:
@@ -50,7 +50,7 @@ services:
     container_name: node
     restart: on-failure
     build:
-      context: BotJava
+      context: .
       dockerfile: node/Dockerfile
     environment:
       NODE_PORT: ${NODE_PORT}
@@ -86,7 +86,7 @@ services:
     container_name: rest-service
     restart: on-failure
     build:
-      context: BotJava
+      context: .
       dockerfile: rest-service/Dockerfile
 #    TODO нужно откомментировать для локального запуска без traefik
 #    ports:
@@ -116,7 +116,7 @@ services:
     container_name: mail-service
     restart: on-failure
     build:
-      context: BotJava
+      context: .
       dockerfile: mail-service/Dockerfile
     environment:
       MAIL_SERVICE_PORT: ${MAIL_SERVICE_PORT}
